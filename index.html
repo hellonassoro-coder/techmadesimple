@@ -3,140 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="p:domain_verify" content="d8e78183b466f8a39bc5659aed17558e"/>
 
     <title>TechMadeSimple | Practical Technology for Small Businesses</title>
 
-    <meta name="description" content="Simple, practical guides to help small businesses use websites, AI, digital marketing, and useful technology tools.">
+    <meta name="description" content="Simple, practical guides that help small businesses use websites, AI, digital marketing, and useful technology tools.">
 
     <style>
         * {
             box-sizing: border-box;
-            margin: 0;
-            padding: 0;
         }
 
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #222;
-            background: #ffffff;
+            background: #f8f9fb;
         }
 
         header {
-            padding: 24px 8%;
-            border-bottom: 1px solid #eaeaea;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 18px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
-            font-size: 24px;
+        nav a {
+            text-decoration: none;
+            color: #111827;
+        }
+
+        .brand {
+            font-size: 21px;
             font-weight: bold;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #333;
-            margin-left: 20px;
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            font-size: 15px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
         }
 
         .hero {
-            max-width: 1100px;
+            background: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .hero-content {
+            max-width: 800px;
             margin: auto;
-            padding: 90px 8%;
         }
 
         .hero h1 {
             font-size: 48px;
-            line-height: 1.1;
-            max-width: 750px;
-            margin-bottom: 24px;
+            line-height: 1.15;
+            margin: 0 0 20px;
+            color: #111827;
         }
 
         .hero p {
-            font-size: 20px;
-            max-width: 650px;
-            color: #555;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 14px 22px;
-            background: #222;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        .section {
-            max-width: 1100px;
+            max-width: 680px;
             margin: auto;
-            padding: 60px 8%;
+            font-size: 19px;
+            color: #4b5563;
         }
 
-        .section h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
         }
 
-        .section-intro {
-            color: #666;
-            max-width: 650px;
+        .section-title {
+            text-align: center;
             margin-bottom: 35px;
         }
 
-        .cards {
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .section-title p {
+            color: #6b7280;
+            margin: 0;
+        }
+
+        .topics {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
         .card {
-            border: 1px solid #e5e5e5;
+            background: #ffffff;
             padding: 25px;
-            border-radius: 8px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
         }
 
         .card h3 {
-            margin-bottom: 10px;
+            margin-top: 0;
+            color: #111827;
         }
 
         .card p {
-            color: #666;
+            color: #4b5563;
+            font-size: 15px;
+        }
+
+        .latest {
+            margin-top: 65px;
+        }
+
+        .article-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .category {
+            color: #2563eb;
+            font-size: 13px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .article-card h3 {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        .article-card p {
+            color: #4b5563;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 8px;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .about {
+            margin-top: 70px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 35px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .about h2 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .about p {
+            color: #4b5563;
         }
 
         footer {
-            margin-top: 50px;
-            padding: 30px 8%;
-            border-top: 1px solid #eaeaea;
-            color: #666;
+            background: #111827;
+            color: #d1d5db;
             text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+            font-size: 14px;
         }
 
-        @media (max-width: 700px) {
-            .hero h1 {
-                font-size: 36px;
+        @media (max-width: 800px) {
+            .topics {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .cards {
-                grid-template-columns: 1fr;
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            header {
+                position: static;
             }
 
             nav {
-                display: block;
+                flex-direction: column;
+                gap: 12px;
             }
 
-            nav a {
-                display: inline-block;
-                margin: 10px 10px 0 0;
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .topics {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 45px 20px;
             }
         }
     </style>
@@ -146,18 +248,22 @@
 
 <header>
     <nav>
-        <div class="logo">TechMadeSimple</div>
+        <a class="brand" href="./">TechMadeSimple</a>
 
-        <div>
+        <div class="nav-links">
+            <a href="./">Home</a>
             <a href="#topics">Topics</a>
+            <a href="#latest">Guides</a>
             <a href="#about">About</a>
         </div>
     </nav>
 </header>
 
-<main>
 
-    <section class="hero">
+<section class="hero">
+
+    <div class="hero-content">
+
         <h1>Practical Technology for Small Businesses</h1>
 
         <p>
@@ -165,83 +271,137 @@
             AI, digital marketing, and useful technology tools.
         </p>
 
-        <a class="button" href="#topics">Explore Topics</a>
-    </section>
+    </div>
 
-    <section class="section" id="topics">
-        <h2>What you'll learn</h2>
+</section>
 
-        <p class="section-intro">
-            Clear, practical information without unnecessary technical jargon.
-        </p>
 
-        <div class="cards">
+<main class="container">
+
+    <section id="topics">
+
+        <div class="section-title">
+
+            <h2>Explore Our Topics</h2>
+
+            <p>
+                Practical technology advice without unnecessary complexity.
+            </p>
+
+        </div>
+
+
+        <div class="topics">
 
             <div class="card">
-                <h3>Websites</h3>
+                <h3>🌐 Websites</h3>
+
                 <p>
-                    Learn what small businesses need from a website
-                    and how to make a website more useful.
+                    Website tips, design ideas, SEO basics, and practical
+                    strategies for small business websites.
                 </p>
             </div>
 
+
             <div class="card">
-                <h3>AI for Business</h3>
+                <h3>🤖 AI for Business</h3>
+
                 <p>
-                    Discover practical ways small businesses can use
-                    AI to save time and improve everyday work.
+                    Practical ways small businesses can use AI and
+                    automation to save time and work smarter.
                 </p>
             </div>
 
+
             <div class="card">
-                <h3>Digital Marketing</h3>
+                <h3>📈 Digital Marketing</h3>
+
                 <p>
-                    Understand practical ways to improve online visibility,
-                    content, and customer discovery.
+                    Simple digital marketing strategies to help small
+                    businesses become easier to discover online.
                 </p>
             </div>
 
+
             <div class="card">
-                <h3>Digital Tools</h3>
+                <h3>⚙️ Digital Tools</h3>
+
                 <p>
-                    Learn how useful online tools can help small businesses
-                    become more organized and productive.
+                    Useful technology and productivity tools that can
+                    help small businesses work more efficiently.
                 </p>
             </div>
 
         </div>
+
     </section>
 
-    <section>
-    <h2>Latest Guide</h2>
 
-    <div class="card">
-        <h3>10 Website Mistakes Small Business Owners Should Avoid</h3>
+    <section id="latest" class="latest">
 
-        <p>
-            Learn the common website mistakes that can make it harder
-            for small businesses to attract and convert customers.
-        </p>
+        <div class="section-title">
 
-        <a href="articles/website-mistakes-small-business/">
-            Read the full guide →
-        </a>
-    </div>
-</section>
+            <h2>Latest Guide</h2>
 
-    <section class="section" id="about">
+            <p>
+                Start with our first practical guide for small business owners.
+            </p>
+
+        </div>
+
+
+        <div class="article-card">
+
+            <div class="category">
+                Small Business Websites
+            </div>
+
+            <h3>
+                10 Website Mistakes Small Business Owners Should Avoid
+            </h3>
+
+            <p>
+                Learn the common website mistakes that can make it harder
+                for small businesses to attract, trust, and convert visitors.
+                Each mistake includes a practical fix you can apply.
+            </p>
+
+            <a
+                class="read-more"
+                href="articles/website-mistakes-small-business/"
+            >
+                Read the full guide →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
         <h2>About TechMadeSimple</h2>
 
-        <p class="section-intro">
-            TechMadeSimple exists to make useful technology easier
-            for small-business owners to understand and apply.
+        <p>
+            TechMadeSimple exists to make useful technology easier for
+            small-business owners to understand and apply.
         </p>
+
+        <p>
+            We focus on practical information about websites, AI,
+            digital marketing, and digital tools — without unnecessary
+            technical language.
+        </p>
+
     </section>
 
 </main>
 
+
 <footer>
-    <p>© 2026 TechMadeSimple. Practical technology made simple.</p>
+
+    © 2026 TechMadeSimple. Practical technology for small businesses.
+
 </footer>
 
 </body>
