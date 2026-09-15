@@ -1,421 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechMadeSimple — Practical Technology for Small Businesses</title>
+<meta name="description" content="Simple, practical guides that help small businesses use websites, AI, digital marketing, and useful digital tools.">
 
-    <meta name="p:domain_verify" content="d8e78183b466f8a39bc5659aed17558e"/>
-    <meta name="google-site-verification" content="LKTFrlNe7puP6N35_Cjkc_mw6pA6M5x0aMV_VLHkPC8" />
+<meta name="p:domain_verify" content="d8e78183b466f8a39bc5659aed17558e">
+<meta name="google-site-verification" content="LKTFrlNe7puP6N35_Cjkc_mw6pA6M5x0aMV_VLHkPC8">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L77W8P5ZE8"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'G-L77W8P5ZE8');
-    </script>
-    
-    <title>TechMadeSimple | Practical Technology for Small Businesses</title>
 
-    <meta name="description" content="Simple, practical guides that help small businesses use websites, AI, digital marketing, and useful technology tools.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L77W8P5ZE8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-L77W8P5ZE8');
+</script>
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.7;color:#202020;background:#f7f5f0}
+nav{position:sticky;top:0;background:#111;color:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;z-index:10}
+nav a{color:#fff;text-decoration:none;margin-left:24px;font-size:14px}
+.brand{font-weight:800;letter-spacing:.5px}
+.container{max-width:1000px;margin:0 auto;padding:0 24px}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#a87524}
+h1,h2,h3{line-height:1.15}
+a{color:#9a6b20}
+.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:12px 18px;font-weight:700}
+.hero{padding:90px 0 75px}
+.hero h1{font-size:clamp(44px,7vw,76px);letter-spacing:-2.5px;max-width:850px;margin:14px 0 22px}
+.hero p{font-size:20px;color:#555;max-width:720px}
+.section{padding:55px 0}
+.section h2{font-size:36px;margin:0 0 14px}
+.section-intro{color:#666;max-width:700px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px}
+.card{background:#fff;border:1px solid #e5e0d7;padding:28px}
+.card h3{margin:0 0 10px;font-size:23px}
+.card p{color:#555;margin-bottom:20px}
+.latest{margin-top:30px;background:#fff;border:1px solid #e5e0d7;padding:32px}
+.label{font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:#a87524}
+.latest h3{font-size:30px;margin:10px 0}
+.latest p{color:#555}
+footer{background:#111;color:#bbb;text-align:center;padding:35px 24px;margin-top:40px;font-size:13px}
+.article{max-width:850px;margin:0 auto;padding:75px 24px}
+.article h1{font-size:clamp(42px,6vw,68px);letter-spacing:-2px;margin:14px 0 22px}
+.article .intro{font-size:20px;color:#555;max-width:760px}
+.note{margin:28px 0;padding:20px 22px;background:#fff;border-left:4px solid #a87524}
+.tool{background:#fff;padding:24px;margin:22px 0;border:1px solid #e5e0d7}
+.tool h2{font-size:30px;margin-top:0}
+.use{font-weight:700}
+.checklist{background:#111;color:#fff;padding:30px;margin-top:45px}
+.checklist h2{color:#fff;margin-top:0}
+.back{display:inline-block;margin-top:40px;font-weight:700;color:#111}
+@media(max-width:700px){nav{padding:15px 5%}nav a{margin-left:12px}.cards{grid-template-columns:1fr}.hero{padding:60px 0}}
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #222;
-            background: #f8f9fb;
-        }
-
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            padding: 18px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav {
-            max-width: 1000px;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #111827;
-        }
-
-        .brand {
-            font-size: 21px;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 22px;
-            font-size: 15px;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        .hero {
-            background: #ffffff;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 1px solid #e5e7eb;
-        }
-
-        .hero-content {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            line-height: 1.15;
-            margin: 0 0 20px;
-            color: #111827;
-        }
-
-        .hero p {
-            max-width: 680px;
-            margin: auto;
-            font-size: 19px;
-            color: #4b5563;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 60px 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 35px;
-        }
-
-        .section-title h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            color: #111827;
-        }
-
-        .section-title p {
-            color: #6b7280;
-            margin: 0;
-        }
-
-        .topics {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            background: #ffffff;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .card h3 {
-            margin-top: 0;
-            color: #111827;
-        }
-
-        .card p {
-            color: #4b5563;
-            font-size: 15px;
-        }
-
-        .latest {
-            margin-top: 65px;
-        }
-
-        .article-card {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            padding: 30px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .category {
-            color: #2563eb;
-            font-size: 13px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .article-card h3 {
-            font-size: 25px;
-            margin: 10px 0;
-        }
-
-        .article-card p {
-            color: #4b5563;
-        }
-
-        .read-more {
-            display: inline-block;
-            margin-top: 8px;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .read-more:hover {
-            text-decoration: underline;
-        }
-
-        .about {
-            margin-top: 70px;
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 35px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .about h2 {
-            margin-top: 0;
-            color: #111827;
-        }
-
-        .about p {
-            color: #4b5563;
-        }
-
-        footer {
-            background: #111827;
-            color: #d1d5db;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 30px;
-            font-size: 14px;
-        }
-
-        @media (max-width: 800px) {
-            .topics {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .hero h1 {
-                font-size: 40px;
-            }
-        }
-
-        @media (max-width: 550px) {
-            header {
-                position: static;
-            }
-
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
-            .hero {
-                padding: 60px 20px;
-            }
-
-            .hero h1 {
-                font-size: 34px;
-            }
-
-            .hero p {
-                font-size: 17px;
-            }
-
-            .topics {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 45px 20px;
-            }
-        }
-    </style>
+.topic-icon{font-size:12px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:#a87524}
+</style>
 </head>
-
 <body>
-
-<header>
-    <nav>
-        <a class="brand" href="./">TechMadeSimple</a>
-
-        <div class="nav-links">
-            <a href="./">Home</a>
-            <a href="#topics">Topics</a>
-            <a href="#latest">Guides</a>
-            <a href="#about">About</a>
-        </div>
-    </nav>
-</header>
-
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>Practical Technology for Small Businesses</h1>
-
-        <p>
-            Simple guides to help small businesses understand websites,
-            AI, digital marketing, and useful technology tools.
-        </p>
-
-    </div>
-
-</section>
-
-
-<main class="container">
-
-    <section id="topics">
-
-        <div class="section-title">
-
-            <h2>Explore Our Topics</h2>
-
-            <p>
-                Practical technology advice without unnecessary complexity.
-            </p>
-
-        </div>
-
-
-        <div class="topics">
-
-            <div class="card">
-                <h3>🌐 Websites</h3>
-
-                <p>
-                    Website tips, design ideas, SEO basics, and practical
-                    strategies for small business websites.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>🤖 AI for Business</h3>
-
-                <p>
-                    Practical ways small businesses can use AI and
-                    automation to save time and work smarter.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>📈 Digital Marketing</h3>
-
-                <p>
-                    Simple digital marketing strategies to help small
-                    businesses become easier to discover online.
-                </p>
-            </div>
-
-
-            <div class="card">
-                <h3>⚙️ Digital Tools</h3>
-
-                <p>
-                    Useful technology and productivity tools that can
-                    help small businesses work more efficiently.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="latest" class="latest">
-
-        <div class="section-title">
-
-            <h2>Latest Guide</h2>
-
-            <p>
-                Start with our first practical guide for small business owners.
-            </p>
-
-        </div>
-
-
-        <div class="article-card">
-
-            <div class="category">
-                Small Business Websites
-            </div>
-
-            <h3>
-                10 Website Mistakes Small Business Owners Should Avoid
-            </h3>
-
-            <p>
-                Learn the common website mistakes that can make it harder
-                for small businesses to attract, trust, and convert visitors.
-                Each mistake includes a practical fix you can apply.
-            </p>
-
-            <a
-                class="read-more"
-                href="articles/website-mistakes-small-business/"
-            >
-                Read the full guide →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <section id="about" class="about">
-
-        <h2>About TechMadeSimple</h2>
-
-        <p>
-            TechMadeSimple exists to make useful technology easier for
-            small-business owners to understand and apply.
-        </p>
-
-        <p>
-            We focus on practical information about websites, AI,
-            digital marketing, and digital tools — without unnecessary
-            technical language.
-        </p>
-
-    </section>
-
-</main>
-
-
-<footer>
-
-    © 2026 TechMadeSimple. Practical technology for small businesses.
-
-</footer>
-
-</body>
-</html>
+<nav>
+  <div class="brand">TECH MADE SIMPLE</div>
+  <div>
+    <a href="#home">Home</a><a href="#topics">Topics</a><a href="#guides">Guides</a><a href="#about">About</a>
+  </div>
+</nav>
+<header class="hero" id="home"><div class="container">
+  <div class="eyebrow">Practical Technology for Small Business</div>
+  <h1>Technology doesn't have to be complicated.</h1>
+  <p>Simple, practical guides that help small-business owners use websites, AI, digital marketing, and useful tools to work smarter and grow.</p>
+  <a class="btn" href="#guides">Explore the guides →</a>
+</div></header>
+<section class="section" id="topics"><div class="container">
+  <h2>Topics</h2><p class="section-intro">Useful technology explained without unnecessary technical language.</p>
+  <div class="cards">
+    <article class="card"><div class="topic-icon">Websites</div><h3>Small Business Websites</h3><p>Practical advice for building websites that are clear, trustworthy, mobile-friendly, and useful for customers.</p></article>
+    <article class="card"><div class="topic-icon">AI</div><h3>AI for Small Business</h3><p>Simple ways to use AI tools to save time, improve everyday work, and support better business decisions.</p></article>
+    <article class="card"><div class="topic-icon">Marketing</div><h3>Digital Marketing</h3><p>Practical guidance on getting your business found online and turning attention into real opportunities.</p></article>
+    <article class="card"><div class="topic-icon">Tools</div><h3>Digital Productivity</h3><p>Useful tools and workflows that reduce repetitive work and make running a small business easier.</p></article>
+  </div>
+</div></section>
+<section class="section" id="guides"><div class="container">
+  <h2>Latest Guides</h2><p class="section-intro">Start with a practical guide, apply what you learn, and come back for the next useful idea.</p>
+  <article class="latest"><div class="label">Small Business Websites</div><h3>10 Website Mistakes Small Business Owners Should Avoid</h3><p>Learn the common website mistakes that can make it harder for small businesses to attract, trust, and convert visitors.</p><a class="btn" href="articles/website-mistakes-small-business/">Read the full guide →</a></article>
+  <article class="latest"><div class="label">AI for Small Business</div><h3>7 AI Tools Small Business Owners Can Use to Save Time</h3><p>Discover practical AI tools for writing, design, organization, automation, scheduling, and repetitive business work.</p><a class="btn" href="articles/ai-tools-small-business/">Read the full guide →</a></article>
+</div></section>
+<section class="section" id="about"><div class="container"><div class="card">
+  <h2>About TechMadeSimple</h2><p>TechMadeSimple exists to make useful technology easier for small-business owners to understand and apply.</p>
+  <p>We focus on practical information about websites, AI, digital marketing, and digital tools — without unnecessary technical complexity.</p>
+</div></div></section>
+<footer>TechMadeSimple — Simple technology guides for small businesses.</footer>
+</body></html>
